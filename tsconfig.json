@@ -25,6 +25,7 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@assets/*": ["./src/assets/*"],
+      "@context/*": ["./src/context/*"],
       "@pages/*": ["./src/pages/*"],
       "@utils": ["./src/utils.ts"],
     },
