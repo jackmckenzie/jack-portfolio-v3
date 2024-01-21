@@ -1,12 +1,14 @@
 # Template Designer
 
-![image](/src/assets/projects/template-design.png)
+![Template Designer](/projects/template-design.png)
 
 Proprietary web-based design software.
 
 This software is designed to allow users to create their own templates to print their paper promotional tickets.
 
 It was recognised that our old desktop-based software posed a business risk, as it was too difficult for clients to effectively use.
+
+![Smart groups concept 1](/projects/template-design-smartgroups-2.gif)
 
 I was heavily involved in this project from the outset, collaborating with a senior UX consultant on the initial UI. I then took on the role of sole designer and contributed front end code to the project, tidying up sidebar properties and adding some features.
 
