@@ -30,9 +30,7 @@ const router = createBrowserRouter([
         element: <Project />,
         loader: async ({ params }) => {
           try {
-            const module = await import(
-              `@assets/projects/markdown/${params.slug}.md`
-            );
+            const module = await import(`@assets/projects/${params.slug}.md`);
             const response = await fetch(module.default);
             return await response.text();
           } catch (error) {

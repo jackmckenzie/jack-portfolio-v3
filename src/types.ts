@@ -1,11 +1,15 @@
 export type ProjectType = 'design' | 'frontend' | 'backend';
 
 export interface Project {
-  id: number;
+  slug: string;
   title: string;
   blurb: string;
-  description: string;
   thumbnail: string;
-  images: string[];
+  // images: Image[];
   type: ProjectType[];
 }
+
+type Image = {
+  src: string;
+  alt: string;
+};

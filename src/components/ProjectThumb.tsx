@@ -5,11 +5,11 @@ import type { Project } from '@types';
 import { Link } from 'react-router-dom';
 
 export function ProjectThumb(props: Project) {
-  const { id, title, blurb, thumbnail, type } = props;
+  const { slug, title, blurb, thumbnail, type } = props;
 
   return (
     <Wrapper>
-      <Link to={`/projects/${id}`}>
+      <Link to={`/projects/${slug}`}>
         <div className="flex w-full gap-6">
           <div className="w-full max-w-xl">
             <img src={thumbnail} alt={title} className="w-full" />
