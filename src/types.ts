@@ -8,8 +8,3 @@ export interface Project {
   // images: Image[];
   type: ProjectType[];
 }
-
-type Image = {
-  src: string;
-  alt: string;
-};
