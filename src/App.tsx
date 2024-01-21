@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
           { to: '/about', label: 'About' },
         ]}
       />
-      <main className="z-0">
+      <main className="z-0 pb-24">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -5,13 +5,16 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  assetsInclude: ['**/*.md'],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@assets': path.resolve(__dirname, './src/assets'),
       '@components': path.resolve(__dirname, './src/components'),
       '@context': path.resolve(__dirname, './src/context'),
+      '@data': path.resolve(__dirname, './src/data'),
       '@pages': path.resolve(__dirname, './src/pages'),
+      '@types': path.resolve(__dirname, './src/types'),
       '@utils': path.resolve(__dirname, './src/utils'),
     },
   },

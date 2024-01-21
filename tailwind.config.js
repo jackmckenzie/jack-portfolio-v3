@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         jost: ['Jost', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: ({ theme }) => ({
