@@ -10,7 +10,7 @@ export function ProjectThumb(props: Project) {
   return (
     <Wrapper>
       <Link to={`/projects/${slug}`} className="group">
-        <div className="flex w-full flex-col gap-6 sm:flex-row">
+        <div className="flex w-full flex-col gap-6 md:flex-row">
           <div className="w-full max-w-xl">
             <img
               src={thumbnail}
@@ -18,7 +18,7 @@ export function ProjectThumb(props: Project) {
               className="w-full rounded-lg drop-shadow-lg"
             />
           </div>
-          <div className="flex flex-col md:min-w-[420px]">
+          <div className="flex flex-col sm:min-w-[240px] md:min-w-[420px]">
             <Prose className="flex-1">
               <h3 className="underline-offset-4 group-hover:underline">
                 {title}
