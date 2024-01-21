@@ -8,7 +8,7 @@ export function Wrapper(props: WrapperProps) {
   return (
     <div
       className={cn(
-        'mx-auto my-0 flex w-full max-w-screen-lg px-5',
+        'mx-auto my-0 flex w-full max-w-screen-lg px-2 sm:px-4 md:px-5',
         props.className
       )}
     >

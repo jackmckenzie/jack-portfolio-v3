@@ -18,7 +18,7 @@ export function ProjectThumb(props: Project) {
               className="w-full rounded-lg drop-shadow-lg"
             />
           </div>
-          <div className="flex min-w-[420px] flex-col">
+          <div className="flex flex-col md:min-w-[420px]">
             <Prose className="flex-1">
               <h3 className="underline-offset-4 group-hover:underline">
                 {title}
