@@ -4,6 +4,8 @@
 
 Proprietary web-based design software.
 
+**My role**: Lead Designer, later (and ongoing) full-stack developer
+
 This software is designed to allow users to create their own templates to print their paper promotional tickets.
 
 It was recognised that our old desktop-based software posed a business risk, as it was too difficult for clients to effectively use.

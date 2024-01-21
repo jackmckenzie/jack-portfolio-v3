@@ -3,24 +3,32 @@ import { Prose } from '@components/Prose';
 
 export function About() {
   return (
-    <div className="pt-24">
+    <div className="sm:pt-24">
       <Wrapper className="flex-col">
         <h1 className="text-normal mb-24 font-jost text-5xl leading-[4rem] text-gray-700 dark:text-gray-100">
           About me
         </h1>
         <Prose>
           <p>
-            I collaborate with clever people to build clean, creative solutions
-            to complex problems, that can be used by anybody.
+            I love collaborating with clever people to build clean, creative
+            solutions to complex problems, that can be used by anybody.
           </p>
           <p>
-            I love being a driver for strong design, clean code and constant
-            improvement within an organisation.
+            I love being a driver for strong design, maintable and well-tested
+            code and constant improvement within an organisation.
           </p>
           <p>
             Since joining my current company, I've helped them to become more
             design-driven and helped build exciting and challenging new
             products.
+          </p>
+          <p>
+            I keep accessibility at the forefront of all my work and have been
+            instrumental in helping Last Yard attain WCAG compliance in 2023.
+          </p>
+          <p>
+            If you'd like to reach out, feel free to contact me via LinkedIn
+            below.
           </p>
           <h3>Tech I'm into</h3>
           <ul>

@@ -13,6 +13,18 @@ export function Work() {
       <Wrapper>
         <Prose>
           <h2 className="text-3xl">My work</h2>
+          <p>
+            Below are examples of my work. All are real-world examples tested
+            and used by customers. In my career I was a full-time{' '}
+            <span className="font-semibold">Product Designer</span> before
+            finding a new passion as a full-stack developer, so I have examples
+            for both.
+          </p>
+          <p>
+            I test all my work rigorously to ensure it is as accessible as
+            possible, using Lighthouse, WAVE and screenreaders.
+          </p>
+          <p>Click any for more details.</p>
         </Prose>
       </Wrapper>
       <div className="space-y-16">
@@ -26,10 +38,10 @@ export function Work() {
 
 function Intro() {
   return (
-    <div className="pt-24">
+    <div className="sm:pt-24">
       <Wrapper className="justify-between">
         <div className="max-w-xl space-y-5 text-gray-800 dark:text-gray-200">
-          <h1 className="font-jost text-5xl leading-[4rem] dark:text-gray-100">
+          <h1 className="text-center font-jost text-5xl leading-[4rem] dark:text-gray-100 sm:text-left">
             Hi, I'm{' '}
             <span className="font-medium text-emerald-600 dark:text-emerald-400">
               Jack
@@ -49,6 +61,7 @@ function Intro() {
         </div>
         <div
           className={cn(
+            'hidden sm:block',
             'relative z-0 h-min w-[300px] shrink-0',
             'before:absolute before:-left-2 before:-top-2 before:z-[-1] before:h-[calc(100%-0.5rem)] before:w-[calc(100%-0.5rem)] before:rounded-[2.5rem] before:border before:border-emerald-400 dark:before:border-emerald-600',
             'after:absolute after:-bottom-2 after:-right-2 after:z-[-1] after:h-[calc(100%-0.5rem)] after:w-[calc(100%-0.5rem)] after:rounded-[2.5rem] after:border after:border-orange-400 dark:after:border-orange-600',

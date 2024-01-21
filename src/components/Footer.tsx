@@ -25,7 +25,7 @@ export function Footer() {
     <footer className="pb-16 pt-5">
       <Wrapper>
         <div className="flex w-full flex-col items-center justify-center">
-          <div className="flex flex-col items-center gap-4 text-gray-800 dark:text-gray-200 sm:flex-row">
+          <div className="flex flex-row items-center gap-4 text-gray-800 dark:text-gray-200">
             <SocialLink
               href="https://www.linkedin.com/in/jack-mckenz"
               icon={<Linkedin />}

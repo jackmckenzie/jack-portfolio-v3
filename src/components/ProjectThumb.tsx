@@ -9,17 +9,23 @@ export function ProjectThumb(props: Project) {
 
   return (
     <Wrapper>
-      <Link to={`/projects/${slug}`}>
-        <div className="flex w-full gap-6">
+      <Link to={`/projects/${slug}`} className="group">
+        <div className="flex w-full flex-col gap-6 sm:flex-row">
           <div className="w-full max-w-xl">
-            <img src={thumbnail} alt={title} className="w-full" />
+            <img
+              src={thumbnail}
+              alt={title}
+              className="w-full rounded-lg drop-shadow-lg"
+            />
           </div>
-          <div className="flex flex-col">
+          <div className="flex min-w-[420px] flex-col">
             <Prose className="flex-1">
-              <h3>{title}</h3>
+              <h3 className="underline-offset-4 group-hover:underline">
+                {title}
+              </h3>
               <p>{blurb}</p>
             </Prose>
-            <div className="flex items-center">
+            <div className="mt-4 flex items-center">
               {type.map((projectType) => (
                 <Badge key={projectType} type={projectType} />
               ))}

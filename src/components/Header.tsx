@@ -11,11 +11,11 @@ export function Header(props: HeaderProps) {
   return (
     <header className="relative z-10 w-full py-6">
       <div className="mx-auto my-0 w-full max-w-screen-lg px-4">
-        <div className="flex flex-col items-center sm:flex-row">
+        <div className="flex flex-col items-center gap-4 sm:flex-row">
           <Link to={'/'}>
             <Monogram />
           </Link>
-          <div className="ml-auto flex items-center gap-16">
+          <div className="flex items-center gap-16 sm:ml-auto">
             <nav>
               <ul className="flex gap-16">
                 {props.links.map((link) => (
