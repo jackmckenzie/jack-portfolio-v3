@@ -1,33 +1,34 @@
-import jackHeadshot from '@assets/jack-headshot.jpg';
-import { cn } from '@utils';
 import { Wrapper } from '@components/Wrapper';
 import { Prose } from '@components/Prose';
 import { ProjectThumb } from '@components/ProjectThumb';
 
 import { projects } from '@data/projects';
+import { Header } from '@/components/Header';
 
 export function Work() {
   return (
-    <div className="space-y-16">
+    <div className="flex flex-col gap-16">
+      <Header
+        links={[
+          { to: '/', label: 'Work' },
+          { to: '/about', label: 'About' },
+        ]}
+      />
       <Intro />
+      <About />
       <Wrapper>
         <Prose>
-          <h2 className="text-3xl">My work</h2>
-          <p>
-            Below are examples of my work. All are real-world examples tested
-            and used by customers. In my career I was a full-time{' '}
-            <span className="font-semibold">Product Designer</span> before
-            finding a new passion as a full-stack developer, so I have examples
-            for both.
+          <h2>My work</h2>
+          <p className="text-slate-300">
+            Below are examples of my work — thoughtfully designed, carefully
+            built, and rigorously tested in production environments.
+            Accessibility is a priority in everything I create, and I regularly
+            use tools like Lighthouse, WAVE, and screen readers to ensure an
+            inclusive experience for all users.
           </p>
-          <p>
-            I test all my work rigorously to ensure it is as accessible as
-            possible, using Lighthouse, WAVE and screenreaders.
-          </p>
-          <p>Click any for more details.</p>
         </Prose>
       </Wrapper>
-      <div className="space-y-16">
+      <div className="flex flex-col gap-16">
         {projects.map((project) => (
           <ProjectThumb key={project.title} {...project} />
         ))}
@@ -38,28 +39,39 @@ export function Work() {
 
 function Intro() {
   return (
-    <div className="sm:pt-24">
+    <div className="">
       <Wrapper className="justify-between">
-        <div className="max-w-xl space-y-5 text-gray-800 dark:text-gray-200">
-          <h1 className="text-center font-jost text-5xl leading-[4rem] dark:text-gray-100 sm:text-left">
+        <div className="my-12 flex max-w-xl flex-col gap-5 text-gray-800 dark:text-gray-200">
+          {/* <h1 className="text-4xl font-bold">Jack McKenzie</h1> */}
+          {/* <h2 className="text-2xl text-slate-300">Full-stack developer</h2> */}
+          <h1 className="text-center text-4xl sm:text-left sm:text-5xl sm:leading-[4rem] dark:text-gray-100">
             Hi, I'm{' '}
-            <span className="font-medium text-emerald-600 dark:text-emerald-400">
+            <span className="font-bold text-emerald-600 dark:text-emerald-400">
               Jack
-            </span>
-            .<br />
-            I'm a{' '}
-            <span className="text-orange-600 dark:text-orange-500">
-              full-stack developer
             </span>
             .
           </h1>
-          <p className="text-lg">
-            I come from a design background, with a focus on creating engaging &
-            accessible web experiences.
-          </p>
-          <p>Currently: Software Engineer at Last Yard</p>
+          {/* .<br /> */}
+          {/* I'm a{' '} */}
+          {/* <span className="text-orange-600 dark:text-orange-500"> */}
+          {/* full-stack developer */}
+          {/* </span> */}
+          {/* . */}
+          {/* </h1> */}
+          <Prose>
+            <h2 className="mb-8 text-center text-2xl sm:text-left">
+              I'm a full-stack developer.
+            </h2>
+            <p className="text-gray-300 sm:text-lg">
+              I build accessible and user-focused enterprise web experiences.
+            </p>
+          </Prose>
+          {/* <p> */}
+          {/* Previously, I was a product designer, and I bring that same eye for detail and love for good UX into every line of code. */}
+          {/* </p> */}
+          {/* <p>Currently, I'm a Software Engineer at <span className="font-medium">Last Yard</span>, where I build production-grade tools used by enterprise clients across retail industries.</p> */}
         </div>
-        <div
+        {/* <div
           className={cn(
             'hidden sm:block',
             'relative z-0 h-min w-[300px] shrink-0',
@@ -75,8 +87,37 @@ function Intro() {
             alt="Jack McKenzie"
             className={cn('relative w-full rounded-4xl')}
           />
-        </div>
+        </div> */}
       </Wrapper>
     </div>
   );
 }
+
+const About = () => (
+  <Wrapper>
+    <Prose>
+      <h2>A bit about me</h2>
+      <p>
+        I started out as a Product Designer, and I bring that same attention to
+        detail into every line of code. I love collaborating with smart people
+        to solve complex problems, using design thinking to craft beautiful
+        interfaces with thoughtful, delightful interactions. I especially enjoy
+        building reusable components and systems that make life easier for other
+        developers.
+      </p>
+      <p>
+        I’m currently a Software Engineer at{' '}
+        <span className="font-bold">Last Yard</span>, where I’ve helped shift
+        the culture to be more design-led—championing accessible front-end
+        practices and contributing to ambitious new products. I created and
+        continue to maintain our design system, playing a key role in achieving
+        WCAG compliance and helping us secure large-scale enterprise clients.
+      </p>
+      <p>
+        Outside of work, you’ll find me bouldering, playing music, obsessing
+        over fonts and turtles, or spending time with my wonderful wife and two
+        boys.
+      </p>
+    </Prose>
+  </Wrapper>
+);

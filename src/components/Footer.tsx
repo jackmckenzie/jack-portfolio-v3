@@ -12,7 +12,7 @@ function SocialLink(props: SocialLinkProps) {
       href={props.href}
       target="_blank"
       rel="noopener noreferrer"
-      className="duration-400 flex transform items-center gap-2 rounded-full bg-gray-700/25 p-3 transition-transform hover:-translate-y-0.5 dark:bg-gray-100 dark:text-gray-700"
+      className="flex transform items-center gap-2 rounded-full bg-gray-700/25 p-3 transition-transform duration-400 hover:-translate-y-0.5 dark:bg-gray-100 dark:text-gray-700"
     >
       {props.icon}
       <span className="sr-only">{props.label}</span>
@@ -22,7 +22,7 @@ function SocialLink(props: SocialLinkProps) {
 
 export function Footer() {
   return (
-    <footer className="pb-16 pt-5">
+    <footer className="pt-5 pb-16">
       <Wrapper>
         <div className="flex w-full flex-col items-center justify-center">
           <div className="flex flex-row items-center gap-4 text-gray-800 dark:text-gray-200">

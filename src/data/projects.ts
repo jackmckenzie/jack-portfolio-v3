@@ -4,9 +4,27 @@ import promotionsImg from '@assets/projects/promotions.png';
 import blogImg from '@assets/projects/blog-list.png';
 import runtimeImg from '@assets/projects/runtime-log.png';
 import rbacImg from '@assets/projects/rbac-permission-control.png';
+import pcrImg from '@assets/projects/print-compliance-report.png';
+import fyImg from '@assets/projects/frontyard.png';
+
 import type { Project } from '@types';
 
 export const projects: Project[] = [
+  {
+    slug: 'frontyard',
+    title: 'Frontyard Design System',
+    blurb: 'A modern, WCAG Accessible design system and component library',
+    thumbnail: fyImg,
+    type: ['frontend', 'design'],
+  },
+  {
+    slug: 'print-compliance-report',
+    title: 'Print Compliance Report',
+    blurb:
+      'A tool to give visibility for store networks to see whether advertising material has been printed, and if it was printed on time.',
+    thumbnail: pcrImg,
+    type: ['frontend', 'backend'],
+  },
   {
     slug: 'template-design',
     title: 'Template Designer',
@@ -35,7 +53,7 @@ export const projects: Project[] = [
     slug: 'runtime-log',
     title: 'Runtime logs',
     blurb:
-      'Error logs for complex business rule functions. Power users of our product needed highly detailed, easy-to-share error logs. I created and coded a simple design for this that attempts to "stay out of the way". Users of this tool have found it invaluable in their day to day work.',
+      'Error logs for complex business rule functions. Power users of our product needed highly detailed, easy-to-share error logs. I designed and built a simple solution that users have found invaluable in their day to day work.',
     thumbnail: runtimeImg,
     type: ['frontend', 'backend', 'design'],
   },

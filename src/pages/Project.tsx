@@ -4,11 +4,16 @@ import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { Prose } from '@components/Prose';
 import ReactMarkdown from 'react-markdown';
+import { useLayoutEffect } from 'react';
 
 export function Project() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const data = useLoaderData() as string;
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function goHome() {
     navigate('/');
@@ -31,7 +36,7 @@ export function Project() {
       <button
         onClick={() => goHome()}
         className={
-          'group -ml-4 inline-flex items-center self-start px-4 py-2 text-gray-700 dark:text-gray-300'
+          'group -ml-4 inline-flex cursor-pointer items-center self-start px-4 py-2 text-gray-700 dark:text-gray-300'
         }
       >
         <ArrowLeft size={20} className="mr-1" />

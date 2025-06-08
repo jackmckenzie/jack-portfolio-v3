@@ -9,16 +9,19 @@ export function ProjectThumb(props: Project) {
 
   return (
     <Wrapper>
-      <Link to={`/projects/${slug}`} className="group">
+      <Link
+        to={`/projects/${slug}`}
+        className="group -mx-8 rounded-lg p-6 focus:ring-3 focus:ring-emerald-400 focus:outline-none"
+      >
         <div className="flex w-full flex-col gap-6 md:flex-row">
-          <div className="w-full max-w-xl">
+          <div className="w-full max-w-xl sm:flex-1">
             <img
               src={thumbnail}
               alt={title}
               className="w-full rounded-lg drop-shadow-lg"
             />
           </div>
-          <div className="flex flex-col sm:min-w-[240px] md:min-w-[420px]">
+          <div className="flex flex-col sm:min-w-[240px] sm:flex-1 md:min-w-[420px]">
             <Prose className="flex-1">
               <h3 className="underline-offset-4 group-hover:underline">
                 {title}

@@ -48,7 +48,7 @@ export function DarkModeToggle() {
                     onClick={() => setTheme(option.value)}
                     className={cn(
                       'group flex w-full items-center rounded-md px-2 py-2 text-sm text-gray-700 dark:text-gray-200',
-                      active && 'bg-gray-100  dark:bg-gray-700',
+                      active && 'bg-gray-100 dark:bg-gray-700',
                       option.value === theme &&
                         'text-emerald-700 dark:text-emerald-300'
                     )}

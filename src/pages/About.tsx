@@ -1,13 +1,31 @@
 import { Wrapper } from '@components/Wrapper';
 import { Prose } from '@components/Prose';
-
+import jackHeadshot from '@assets/jack-headshot.jpg';
+import { cn } from '@utils';
 export function About() {
   return (
     <div className="sm:pt-24">
       <Wrapper className="flex-col">
-        <h1 className="text-normal mb-24 font-jost text-5xl leading-[4rem] text-gray-700 dark:text-gray-100">
+        <h1 className="text-normal font-jost mb-24 text-5xl leading-[4rem] text-gray-700 dark:text-gray-100">
           About me
         </h1>
+        <div
+          className={cn(
+            'mb-12 hidden sm:block',
+            'relative z-0 h-min w-[300px] shrink-0',
+            'before:absolute before:-top-2 before:-left-2 before:z-[-1] before:h-[calc(100%-0.5rem)] before:w-[calc(100%-0.5rem)] before:rounded-[2.5rem] before:border before:border-emerald-400 dark:before:border-emerald-600',
+            'after:absolute after:-right-2 after:-bottom-2 after:z-[-1] after:h-[calc(100%-0.5rem)] after:w-[calc(100%-0.5rem)] after:rounded-[2.5rem] after:border after:border-orange-400 dark:after:border-orange-600',
+            'transition-transform duration-300 hover:scale-105',
+            'before:transition-all before:duration-300 hover:before:-top-1 hover:before:-left-1 hover:before:rounded-[2.25rem]',
+            'after:transition-all after:duration-300 hover:after:-right-1 hover:after:-bottom-1 hover:after:rounded-[2.25rem]'
+          )}
+        >
+          <img
+            src={jackHeadshot}
+            alt="Jack McKenzie"
+            className={cn('relative w-full rounded-4xl')}
+          />
+        </div>
         <Prose>
           <p>
             I love collaborating with clever people to build clean, creative
@@ -33,14 +51,16 @@ export function About() {
           <h3>Tech I'm into</h3>
           <ul>
             <li>
-              <strong>Front-end:</strong> React, TypeScript, Next.js, Tailwind
-              CSS, Storybook, Figma
+              <strong>Front-end:</strong> React, TypeScript, Redux, Next.js,
+              Tailwind CSS, Storybook, Figma
             </li>
             <li>
-              <strong>Back-end:</strong> Django, Celery, AWS
+              <strong>Back-end:</strong> Django, Celery, Dramatiq, AWS, Redis,
+              Postgres
             </li>
             <li>
-              <strong>Other:</strong> Git, GitHub, CI/CD, Jest
+              <strong>Other:</strong> Git, GitHub, CI/CD, Jest, pytest,
+              Playwright
             </li>
           </ul>
           <h3>Misc. stuff</h3>
