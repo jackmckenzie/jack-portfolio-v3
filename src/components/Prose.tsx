@@ -10,7 +10,7 @@ export function Prose({ className, children }: ProseProps) {
   return (
     <div
       className={cn(
-        'prose prose-lg dark:prose-invert prose-headings:font-medium prose-h1:font-normal prose-li:marker:text-orange-300 prose-li:marker:dark:text-gray-500',
+        'prose sm:prose-lg dark:prose-invert prose-headings:font-medium prose-h1:font-normal prose-li:marker:text-orange-300 prose-li:marker:dark:text-gray-500',
         className
       )}
     >

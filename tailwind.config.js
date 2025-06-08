@@ -1,5 +1,4 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
-import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,6 +9,7 @@ export default {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         jost: ['Jost', ...defaultTheme.fontFamily.sans],
+        jakarta: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: ({ theme }) => ({
         header: `0 0 1px 0 ${theme('colors.emerald.500')}`,
@@ -19,5 +19,4 @@ export default {
       },
     },
   },
-  plugins: [typography],
 };
