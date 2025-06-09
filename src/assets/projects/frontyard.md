@@ -15,7 +15,7 @@ Frontyard is now mature and in use by many of our customers, and opt-in for othe
 
 ![Text Area Screenshot](/projects/text-area.png)
 
-## Component highight: Time picker
+## Component highlight: Time picker
 
 I added a unique time input after being dissatisfied with available options.
 
