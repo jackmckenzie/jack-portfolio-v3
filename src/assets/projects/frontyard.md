@@ -4,9 +4,9 @@
 
 Frontyard is Last Yard's proprietary, accessible design system.
 
-Our original software was built around 2015, with no major design upgrades since then. It was an accessibility nightmare; most of the colours were far too low contrast and hardly anything could be used with just the keyboard.
+The original software was built in 2015, and like many long-standing systems, it hadn’t seen major design updates in several years. As a result, it no longer met modern accessibility standards—many UI elements had low contrast, and keyboard navigation was limited.
 
-I had long advocated for an upgrade to modernise our UI and make it accessible, and got the chance when the business realised that accessibility had become a requirement rather than a nice-to-have in the enterprise space.
+Recognizing the growing importance of accessibility in enterprise environments, I advocated for a modernization effort that would both enhance usability and align with current design and accessibility best practices. When the business identified accessibility as a strategic priority, I led the push to implement a new design system that significantly improved both the user experience and accessibility compliance.
 
 From there, I was able to collaborate with a designer, and, given that we were a small team, select an existing design library to build our new design system from.
 We picked Flowbite, which uses Tailwind, as well as Radix UI to handle accessibility controls.
